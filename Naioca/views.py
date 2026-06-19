@@ -2,11 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def telainicial(request):
-    return HttpResponse("tela inicial")
+    return render(request,"Naioca/tela_inicial.html")
 
 def paginadelogin(request):
-    return HttpResponse("pagina de login")
+    return render(request,"Naioca/pagina_de_login.html")
 
 def sobre(request):
-    return HttpResponse("sobre")
+    return render(request,"Naioca/sobre.html")
 
