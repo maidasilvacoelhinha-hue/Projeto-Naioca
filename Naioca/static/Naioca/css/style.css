@@ -24,18 +24,6 @@
       color:#8b0020;
       margin-left:10px;
     }
-
-    /* LOGO */
-    .logo-area{
-      text-align:center;
-      margin-top:40px;
-    }
-
-    .logo-area img{
-      width:280px;
-      max-width:90%;
-    }
-
     /* CARD PRODUTOS */
     .container{
       width:90%;
@@ -45,19 +33,6 @@
       padding:30px;
       border-radius:25px;
     }
-
-    .produto-img{
-      display:flex;
-      justify-content:center;
-      margin-bottom:30px;
-    }
-
-    .produto-img img{
-      width:400px;
-      max-width:100%;
-      border-radius:20px;
-    }
-
     h2{
       margin-bottom:25px;
       font-size:40px;
