@@ -13,7 +13,7 @@ def sobre(request):
 def tela_inicial(request):
     itens = [
         {"nome": "Bolo de chocolate", "descricao": "Bolo de chocolate delicioso e fofinho."},
-        {"nome": "Item 2", "descricao": "Descrição do Item 2"},
-        {"nome": "Item 3", "descricao": "Descrição do Item 3"},
+        {"nome": "Bolo de limão", "descricao": "Bolo de limão refrescante e azedinho."},
+        {"nome": "Bolo de cenoura", "descricao": "Bolo de cenoura com cobertura de chocolate."},
     ]
     return render(request, "Naioca/tela_inicial.html", {"itens": itens})
