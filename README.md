@@ -1,5 +1,13 @@
 📌 Sobre o Projeto
 
+Colaboradores da Turma 2:
+
+karinacirilooficial@gmail.com - Karina de Sousa Cirilo
+darcyllennenunesf@gmail.com - Anna Sophya
+ceciliafreire01729@gmail.com - Lílian Vitória
+maidasilvacoelhinha@gmail.com - Evelyn Maida
+evelinkailanny1@gmail.com - Evelin Kailanny
+
 Este projeto consiste no desenvolvimento de um site para uma jovem empreendedora que iniciou no ramo de vendas de trufas e bolos. O objetivo principal é facilitar o processo de compra para os clientes, além de auxiliar na organização dos pedidos e da rotina de trabalho da empreendedora.
 
 O sistema busca oferecer uma experiência simples, prática e intuitiva, permitindo que os clientes visualizem os produtos disponíveis, realizem pedidos de forma rápida e acompanhem as informações necessárias para a compra.
