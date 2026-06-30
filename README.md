@@ -66,7 +66,7 @@ projeto-trufas-bolos/
 
 💻 Como Executar
 Clone o repositório:
-git clone https://github.com/seu-usuario/projeto-trufas-bolos.git
+git clone https://github.com/maidasilvacoelhinha-hue/Projeto-Naioca.git
 Acesse a pasta do projeto:
 cd projeto-trufas-bolos
 Abra o arquivo index.html em seu navegador ou execute o servidor local, caso o projeto possua backend.
