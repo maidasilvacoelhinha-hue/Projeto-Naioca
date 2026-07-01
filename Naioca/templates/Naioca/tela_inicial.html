@@ -23,43 +23,14 @@
 </header>
 
 <section>
-  <h2>Bolo no pote:</h2>
-
-  <div>
-    <span>Bolo de chocolate:</span>
-    <button onclick="alterar('chocolate', -1)">-</button>
-    <span id="chocolate">0</span>
-    <button onclick="alterar('chocolate', 1)">+</button>
+  {%for item in itens %}
+  <div class="card">
+    <h3>{{ item.nome }}</h3>
+    <p>{{ item.descricao }}</p>
   </div>
-
-  <div>
-    <span>Bolo de morango:</span>
-    <button onclick="alterar('morango', -1)">-</button>
-    <span id="morango">0</span>
-    <button onclick="alterar('morango', 1)">+</button>
-  </div>
-
-  <div>
-    <span>Bolo de cenoura:</span>
-    <button onclick="alterar('cenoura', -1)">-</button>
-    <span id="cenoura">0</span>
-    <button onclick="alterar('cenoura', 1)">+</button>
-  </div>
-
-  <div>
-    <span>Bolo de ninho:</span>
-    <button onclick="alterar('ninho', -1)">-</button>
-    <span id="ninho">0</span>
-    <button onclick="alterar('ninho', 1)">+</button>
-  </div>
-
-  <div>
-    <span>Bolo de limão:</span>
-    <button onclick="alterar('limao', -1)">-</button>
-    <span id="limao">0</span>
-    <button onclick="alterar('limao', 1)">+</button>
-  </div>
-
+  {%endfor%}
+ 
+</section>
   <h3>Adicionar algum detalhe?</h3>
   <textarea rows="4"></textarea>
 
