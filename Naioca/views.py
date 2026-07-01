@@ -10,10 +10,13 @@ def login(request):
 def sobre(request):
     return render(request,"Naioca/sobre.html")
 
-def tela_inicial(request):
+def telainicial(request):
     itens = [
         {"nome": "Bolo de chocolate", "descricao": "Bolo de chocolate delicioso e fofinho."},
         {"nome": "Bolo de limão", "descricao": "Bolo de limão refrescante e azedinho."},
         {"nome": "Bolo de cenoura", "descricao": "Bolo de cenoura com cobertura de chocolate."},
     ]
-    return render(request, "Naioca/tela_inicial.html", {"itens": itens})
+    context = {
+        "itens": itens
+    }
+    return render(request, "Naioca/tela_inicial.html", context)

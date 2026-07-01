@@ -22,6 +22,7 @@
         </nav>
     </header>
 
+<<<<<<< HEAD
     <!-- LOGO CENTRAL -->
     <main class="inicio">
         <div class="logo-container">
@@ -31,6 +32,37 @@
 
     <!-- RODAPÉ -->
     <footer class="rodape"></footer>
+=======
+<section>
+  {%for item in itens %}
+  <div class="card">
+    <h3>{{ item.nome }}</h3>
+    <p>{{ item.descricao }}</p>
+  </div>
+  {%endfor%}
+ 
+</section>
+  <h3>Adicionar algum detalhe?</h3>
+  <textarea rows="4"></textarea>
+
+  <br>
+  <button>Finalizar compra</button>
+</section>
+
+<script>
+function alterar(id, valor){
+  let numero = document.getElementById(id);
+  let atual = parseInt(numero.innerText);
+  atual += valor;
+
+  if(atual < 0){
+    atual = 0;
+  }
+
+  numero.innerText = atual;
+}
+</script>
+>>>>>>> 6c6a18e6b0f26afe62542f6599902372dcedcc38
 
 </body>
 </html>
