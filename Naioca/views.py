@@ -4,7 +4,7 @@ from django.http import HttpResponse
 def telainicial(request):
     return render(request,"Naioca/tela_inicial.html")
 
-def paginadelogin(request):
+def login(request):
     return render(request,"Naioca/pagina_de_login.html")
 
 def sobre(request):

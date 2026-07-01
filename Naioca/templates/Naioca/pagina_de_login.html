@@ -2,35 +2,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Login</title>
-  <link rel="stylesheet" href="{% static 'Naioca/css/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Login - Naioca Doces</title>
+    <link rel="stylesheet" href="{% static 'Naioca/css/style.css' %}">
 </head>
 <body>
 
-<h1>LOGIN</h1>
+    <!-- TOPO -->
+    <header class="topo">
+        <div class="contato">
+            <span>Gmail: naioca@gmail.com</span>
+            <span>Telefone: (84) 4002-8922</span>
+        </div>
 
-<label>Email</label>
-<input type="email" placeholder="pippo@gmail.com">
+        <nav class="menu">
+            <a href="{% url 'Naioca:sobre' %}">Sobre</a>
+            <a href="{% url 'Naioca:login' %}">Login</a>
+            <a href="{% url 'Naioca:telainicial' %}">Menu</a>
+        </nav>
+    </header>
 
-<br><br>
+    <!-- CONTEÚDO -->
+    <main class="login-container">
+        <div class="login-box">
+            <h1>LOGIN</h1>
 
-<label>Senha</label>
-<input type="password" placeholder="Insira sua senha">
+            <form method="POST">
+                {% csrf_token %}
 
-<br><br>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="naioca@gmail.com">
 
-<input type="checkbox"> Concordar
+                <label>Senha</label>
+                <input type="password" name="senha" placeholder="Insira sua senha">
 
-<p>Esqueceu senha?</p>
+                <div class="checkbox-area">
+                    <input type="checkbox" id="concordar">
+                    <label for="concordar">Concordar</label>
+                </div>
 
-<button>Entrar</button>
+                <p class="esqueceu">Esqueceu senha?</p>
 
-<p>
-  Aperte aqui para <u>Criar Conta</u>
-</p>
+                <button type="submit">Entrar</button>
+            </form>
 
-<a href="tela_inicial.html">Voltar</a>
+            <p class="criar-conta">
+                Aperte aqui para <u>Criar Conta</u>
+            </p>
+
+            <a href="{% url 'Naioca:login' %}" class="botao-voltar">Voltar</a>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape"></footer>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-📌 Sobre o Projeto
+📌 Sobre o Projeto- equipe: Evelyn Maida,Evelin Kailanny,Lilian Vitoria,Karina Cirilo, Anna Sophya.
 
 Este projeto consiste no desenvolvimento de um site para uma jovem empreendedora que iniciou no ramo de vendas de trufas e bolos. O objetivo principal é facilitar o processo de compra para os clientes, além de auxiliar na organização dos pedidos e da rotina de trabalho da empreendedora.
 

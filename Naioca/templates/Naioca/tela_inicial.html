@@ -2,84 +2,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Tela Inicial - Naioca Doces</title>
-  <link rel="stylesheet" href="{% static 'Naioca/css/style.css' %}">
-</head>
-
+    <meta charset="UTF-8">
+    <title>Naioca Doces</title>
+    <link rel="stylesheet" href="{% static 'Naioca/css/style.css' %}">
 </head>
 <body>
 
-<header>
-  <div>
-    Gmail: naioca@gmail.com
-    Telefone: (84)40028922
-  </div>
+    <!-- TOPO -->
+    <header class="topo">
+        <div class="contato">
+            <span>Gmail: naioca@gmail.com</span>
+            <span>Telefone: (84) 4002-8922</span>
+        </div>
 
-  <div>
-    <a href="pagina_de_login.html">Login</a> |
-    <a href="sobre.html">Sobre</a>
-  </div>
-</header>
+        <nav class="menu">
+            <a href="{% url 'Naioca:sobre' %}">Sobre</a>
+            <a href="{% url 'Naioca:login' %}">Login</a>
+            <a href="#">Menu</a>
+        </nav>
+    </header>
 
-<section>
-  <h2>Bolo no pote:</h2>
+    <!-- LOGO CENTRAL -->
+    <main class="inicio">
+        <div class="logo-container">
+            <img src="{% static 'Naioca/img/logo.png' %}" alt="Logo Naioca">
+        </div>
+    </main>
 
-  <div>
-    <span>Bolo de chocolate:</span>
-    <button onclick="alterar('chocolate', -1)">-</button>
-    <span id="chocolate">0</span>
-    <button onclick="alterar('chocolate', 1)">+</button>
-  </div>
-
-  <div>
-    <span>Bolo de morango:</span>
-    <button onclick="alterar('morango', -1)">-</button>
-    <span id="morango">0</span>
-    <button onclick="alterar('morango', 1)">+</button>
-  </div>
-
-  <div>
-    <span>Bolo de cenoura:</span>
-    <button onclick="alterar('cenoura', -1)">-</button>
-    <span id="cenoura">0</span>
-    <button onclick="alterar('cenoura', 1)">+</button>
-  </div>
-
-  <div>
-    <span>Bolo de ninho:</span>
-    <button onclick="alterar('ninho', -1)">-</button>
-    <span id="ninho">0</span>
-    <button onclick="alterar('ninho', 1)">+</button>
-  </div>
-
-  <div>
-    <span>Bolo de limão:</span>
-    <button onclick="alterar('limao', -1)">-</button>
-    <span id="limao">0</span>
-    <button onclick="alterar('limao', 1)">+</button>
-  </div>
-
-  <h3>Adicionar algum detalhe?</h3>
-  <textarea rows="4"></textarea>
-
-  <br>
-  <button>Finalizar compra</button>
-</section>
-
-<script>
-function alterar(id, valor){
-  let numero = document.getElementById(id);
-  let atual = parseInt(numero.innerText);
-  atual += valor;
-
-  if(atual < 0){
-    atual = 0;
-  }
-
-  numero.innerText = atual;
-}
-</script>
+    <!-- RODAPÉ -->
+    <footer class="rodape"></footer>
 
 </body>
 </html>

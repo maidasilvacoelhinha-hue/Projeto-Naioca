@@ -1,200 +1,179 @@
- *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body{
-      background: linear-gradient(to right,#f6d7df,#fff,#f6d7df);
-      min-height:100vh;
-    }
-
-    /* TOPO */
-header{
-      display:flex;
-      justify-content:space-between;
-      padding:15px;
-      color:#8b0020;
-      font-weight:bold;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header a{
-  text-decoration:none;
-  color:#8b0020;
-  margin-left:10px;
-}
-    /* CARD PRODUTOS */
-.container{
-  width:90%;
-  max-width:1000px;
-  margin:40px auto;
-  background:#deb0bc;
-  padding:30px;
-  border-radius:25px;
-}
-h2{
-  margin-bottom:25px;
-  font-size:40px;
+body {
+    background-color: #f3eeee;
+    font-family: Georgia, serif;
+    min-height: 100vh;
 }
 
-.produto{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin:20px 0;
-  font-size:25px;
-  font-weight:bold;
-}
-.contador{
-  display:flex;
-  align-items:center;
-  gap:15px;
-  background:white;
-  padding:10px 20px;
-  border-radius:30px;
-}
-.contador button{
-  border:none;
-  background:none;
-  font-size:25px;
-  cursor:pointer;
-  font-weight:bold;
-}
-textarea{
-  width:100%;
-  margin-top:15px;
-  padding:15px;
-  border-radius:15px;
-  border:none;
-  resize:none;
-}
-.btn{
-  margin-top:25px;
-  background:white;
-  border:none;
-  padding:15px 25px;
-  border-radius:15px;
-  font-size:20px;
-  cursor:pointer;
-  font-weight:bold;
+/* TOPO */
+.topo {
+    width: 100%;
+    height: 70px;
+    background: #99001a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-    /* MODAL LOGIN */
-.modal{
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  background:white;
-  width:90%;
-  max-width:700px;
-  padding:40px;
-  border-radius:25px;
-  display:none;
-  z-index:10;
-  border:3px solid #444;
-}
-.modal h1{
-  text-align:center;
-  margin-bottom:40px;
-}
-.fechar{
-  position:absolute;
-  right:20px;
-  top:10px;
-  font-size:40px;
-  cursor:pointer;
-}
-.modal label{
-  font-size:30px;
-  font-weight:bold;
-}
-.modal input{
-  width:100%;
-  padding:15px;
-  margin:10px 0 30px;
-  font-size:20px;
-}
-.linha{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:25px;
-}
-.entrar{
-  width:100%;
-  background:black;
-  color:white;
-  padding:20px;
-  border:none;
-  font-size:35px;
-  cursor:pointer;
-  margin-bottom:20px;
+.contato {
+    display: flex;
+    gap: 50px;
 }
 
-    /* MODAL PAGAMENTO */
-    .pagamento{
-      position:fixed;
-      top:50%;
-      left:50%;
-      transform:translate(-50%,-50%);
-      background:#deb0bc;
-      width:90%;
-      max-width:900px;
-      padding:30px;
-      border-radius:25px;
-      display:none;
-      z-index:11;
-    }
-
-    .pagamento input{
-      width:100%;
-      padding:15px;
-      border:none;
-      border-radius:20px;
-      margin-bottom:15px;
-      font-size:20px;
-    }
-
-    .topo-pagamento{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
-
-    .formas{
-      text-align:center;
-      margin-top:40px;
-    }
-
-.formas button{
-    padding:15px 30px;
-    margin:10px;
-    border:none;
-    border-radius:20px;
-    cursor:pointer;
-    font-size:22px;
-    font-weight:bold;
-}
-.overlay{
-  position:fixed;width:100%;
-  height:100%;
-  background:rgba(0,0,0,.4);
-  top:0;
-  left:0;
-  display:none;
-  z-index:5;
-}
-@media(max-width:700px){
-
-.produto{
-  flex-direction:column;
-  align-items:flex-start;
-  gap:10px;
+.menu {
+    display: flex;
+    gap: 20px;
 }
 
-h2{
-  font-size:30px;
+.menu a {
+    text-decoration: none;
+    color: white;
 }
+
+/* CENTRO */
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+}
+
+.logo-container img {
+    width: 450px;
+    max-width: 90%;
+}
+
+/* RODAPÉ */
+.rodape {
+    width: 100%;
+    height: 30px;
+    background: #99001a;
+    position: fixed;
+    bottom: 0;
+}
+/* PÁGINA SOBRE */
+.sobre-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+    padding: 20px;
+}
+
+.sobre-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    width: 700px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.sobre-box h1 {
+    color: #99001a;
+    margin-bottom: 20px;
+}
+
+.sobre-box h2 {
+    margin-top: 30px;
+    color: #99001a;
+}
+
+.sobre-box p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.botao-voltar {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: #99001a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botao-voltar:hover {
+    opacity: 0.8;
+}
+/* PÁGINA LOGIN */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-box h1 {
+    color: #99001a;
+    margin-bottom: 30px;
+}
+
+.login-box label {
+    display: block;
+    text-align: left;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.checkbox-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.esqueceu {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #99001a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-box button:hover {
+    opacity: 0.9;
+}
+
+.criar-conta {
+    margin-top: 20px;
+    font-size: 15px;
 }

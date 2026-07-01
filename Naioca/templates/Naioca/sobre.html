@@ -2,25 +2,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Sobre</title>
-  <link rel="stylesheet" href="{% static 'Naioca/css/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Sobre - Naioca Doces</title>
+    <link rel="stylesheet" href="{% static 'Naioca/css/style.css' %}">
 </head>
 <body>
 
-<h1>Sobre a Naioca Doces</h1>
+    <!-- TOPO -->
+    <header class="topo">
+        <div class="contato">
+            <span>Gmail: naioca@gmail.com</span>
+            <span>Telefone: (84) 4002-8922</span>
+        </div>
 
-<p>
-  A Naioca Doces é uma confeitaria especializada em bolos no pote
-  e sobremesas artesanais, feita com ingredientes de qualidade e muito carinho.
-</p>
+        <nav class="menu">
+            <a href="{% url 'Naioca:sobre' %}">Sobre</a>
+            <a href="{% url 'Naioca:login' %}">Login</a>
+            <a href="{% url 'Naioca:telainicial' %}">Menu</a>
+        </nav>
+    </header>
 
-<h2>Contato</h2>
+    <!-- CONTEÚDO -->
+    <main class="sobre-container">
+        <div class="sobre-box">
+            <h1>Sobre a Naioca Doces</h1>
 
-<p>Email: naioca@gmail.com</p>
-<p>Telefone: (84) 4002-8922</p>
+            <p>
+                A Naioca Doces é uma confeitaria especializada em bolos no pote
+                e sobremesas artesanais, feitas com ingredientes selecionados
+                e preparadas com dedicação para oferecer sabor e qualidade.
+            </p>
 
-<a href="tela_inicial.html">Voltar para página inicial</a>
+            <h2>Contato</h2>
+
+            <p><strong>Email:</strong> naioca@gmail.com</p>
+            <p><strong>Telefone:</strong> (84) 4002-8922</p>
+
+            <a href="{% url 'Naioca:telainicial' %}" class="botao-voltar">
+                Voltar para página inicial
+            </a>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape"></footer>
 
 </body>
 </html>
