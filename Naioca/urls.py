@@ -7,4 +7,5 @@ urlpatterns = [
     path("telainicial/", views.telainicial, name="telainicial"),
     path("login/", views.login, name="login"),
     path("sobre/", views.sobre, name="sobre"),
+    path("cardapio/", views.menu, name="cardapio"),
 ]

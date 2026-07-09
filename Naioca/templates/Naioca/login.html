@@ -11,14 +11,14 @@
     <!-- TOPO -->
     <header class="topo">
         <div class="contato">
-            <span>Gmail: naioca@gmail.com</span>
-            <span>Telefone: (84) 4002-8922</span>
+            <span>Instagram: @naiocaconfeitaria</span>
+            <span>Telefone: (84) 9945-9271</span>
         </div>
 
         <nav class="menu">
             <a href="{% url 'Naioca:sobre' %}">Sobre</a>
             <a href="{% url 'Naioca:login' %}">Login</a>
-            <a href="{% url 'Naioca:telainicial' %}">Menu</a>
+            <a href="{% url 'Naioca:cardapio' %}">Cardapio</a>
         </nav>
     </header>
 
@@ -35,14 +35,8 @@
 
                 <label>Senha</label>
                 <input type="password" name="senha" placeholder="Insira sua senha">
-
-                <div class="checkbox-area">
-                    <input type="checkbox" id="concordar">
-                    <label for="concordar">Concordar</label>
-                </div>
-
-                <p class="esqueceu">Esqueceu senha?</p>
-
+                <br>
+                <br>
                 <button type="submit">Entrar</button>
             </form>
 
@@ -50,7 +44,9 @@
                 Aperte aqui para <u>Criar Conta</u>
             </p>
 
-            <a href="{% url 'Naioca:login' %}" class="botao-voltar">Voltar</a>
+            <a href="{% url 'Naioca:telainicial' %}" class="botao-voltar">
+                Voltar para página inicial
+            </a>
         </div>
     </main>
 
