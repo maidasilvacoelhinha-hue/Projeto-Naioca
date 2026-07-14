@@ -13,6 +13,9 @@ def sobre(request):
 def cardapio(request):
     return cardapio(request,"Naioca/cardapio.html")
 
+def criarconta(request):
+    return render(request,"Naioca/criarconta.html")
+
 def menu(request):
     itens = [
         {"nome": "Bolo de chocolate", "descricao": "Bolo de chocolate delicioso e fofinho."},
