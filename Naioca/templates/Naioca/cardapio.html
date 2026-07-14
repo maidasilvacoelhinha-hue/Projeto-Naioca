@@ -35,14 +35,33 @@
             <p>Massa intensa de chocolate meio amargo, casquinha crocante por cima e interior macio.</p>
         </div>
 
+        <div class="quantidade">
+            <button class="menos">-</button>
+            <input type="number" value="1" min="1">
+            <button class="mais">+</button>
+        </div>
+
         <div class="item">
             <h4> Brownie com Ninho — R$ 12,00</h4>
             <p>Brownie tradicional coberto com creme de leite Ninho cremoso.</p>
         </div>
+
+        <div class="quantidade">
+            <button class="menos">-</button>
+            <input type="number" value="1" min="1">
+            <button class="mais">+</button>
+        </div>
+    
         <br>
         <div class="item">
             <h4> Brownie com Brigadeiro — R$ 12,00</h4>
             <p>Brownie recheado e coberto com Nutella, perfeito para quem ama chocolate com avelã.</p>
+        </div>
+
+        <div class="quantidade">
+            <button class="menos">-</button>
+            <input type="number" value="1" min="1">
+            <button class="mais">+</button>
         </div>
 
         <hr>
@@ -51,12 +70,40 @@
             <h4> Brownie de Doce de Leite — R$ 13,00</h4>
             <p>Combinação irresistível de brownie com doce de leite cremoso.</p>
         </div>
+
+        <div class="quantidade">
+            <button class="menos">-</button>
+            <input type="number" value="1" min="1">
+            <button class="mais">+</button>
+        </div>
+
         <br>
         <div class="item">
             <h4> Brownie de Oreo — R$ 13,00</h4>
             <p>Brownie com creme branco e pedaços de biscoito Oreo.</p>
         </div>
 
+        <div class="quantidade">
+            <button class="menos">-</button>
+            <input type="number" value="1" min="1">
+            <button class="mais">+</button>
+        </div>
+        
+        <script>
+            const menos = document.querySelector(".menos");
+            const mais = document.querySelector(".mais");
+            const input = document.querySelector("input");
+    
+        mais.addEventListener("click", () => {
+            input.value = parseInt(input.value) + 1;
+        });
+    
+        menos.addEventListener("click", () => {
+            if (parseInt(input.value) > 1) {
+                input.value = parseInt(input.value) - 1;
+            }
+        });
+        </script>
     </main>
 
       <!-- RODAPÉ -->
