@@ -23,87 +23,190 @@
     </header>
 
     <main class="cardapio-conteudo">
-
-        <h2> Cardápio de Brownies</h2>
-
-        <hr>
-
-        <h3>Brownies Tradicionais</h3>
-
-        <div class="item">
-            <h4> Brownie Clássico — R$ 8,00</h4>
-            <p>Massa intensa de chocolate meio amargo, casquinha crocante por cima e interior macio.</p>
-        </div>
-
-        <div class="quantidade">
-            <button class="menos">-</button>
-            <input type="number" value="1" min="1">
-            <button class="mais">+</button>
-        </div>
-
-        <div class="item">
-            <h4> Brownie com Ninho — R$ 12,00</h4>
-            <p>Brownie tradicional coberto com creme de leite Ninho cremoso.</p>
-        </div>
-
-        <div class="quantidade">
-            <button class="menos">-</button>
-            <input type="number" value="1" min="1">
-            <button class="mais">+</button>
-        </div>
-    
-        <br>
-        <div class="item">
-            <h4> Brownie com Brigadeiro — R$ 12,00</h4>
-            <p>Brownie recheado e coberto com Nutella, perfeito para quem ama chocolate com avelã.</p>
-        </div>
-
-        <div class="quantidade">
-            <button class="menos">-</button>
-            <input type="number" value="1" min="1">
-            <button class="mais">+</button>
-        </div>
-
-        <hr>
-        <br>
-        <div class="item">
-            <h4> Brownie de Doce de Leite — R$ 13,00</h4>
-            <p>Combinação irresistível de brownie com doce de leite cremoso.</p>
-        </div>
-
-        <div class="quantidade">
-            <button class="menos">-</button>
-            <input type="number" value="1" min="1">
-            <button class="mais">+</button>
-        </div>
-
-        <br>
-        <div class="item">
-            <h4> Brownie de Oreo — R$ 13,00</h4>
-            <p>Brownie com creme branco e pedaços de biscoito Oreo.</p>
-        </div>
-
-        <div class="quantidade">
-            <button class="menos">-</button>
-            <input type="number" value="1" min="1">
-            <button class="mais">+</button>
-        </div>
         
-        <script>
-            const menos = document.querySelector(".menos");
-            const mais = document.querySelector(".mais");
-            const input = document.querySelector("input");
-    
-        mais.addEventListener("click", () => {
-            input.value = parseInt(input.value) + 1;
+    <h2> Cardápio de Brownies</h2>
+
+    <hr>
+
+    <h3>Brownies Tradicionais</h3>
+
+    <div class="item">
+
+        <h4>Brownie Clássico — R$ 8,00</h4>
+
+        <p>Massa intensa de chocolate meio amargo, casquinha crocante por cima e interior macio.</p>
+
+    </div>
+
+    <div class="quantidade">
+
+        <button class="menos" id="menos1">-</button>
+
+        <input type="number" id="qtd1" value="1" min="1">
+
+        <button class="mais" id="mais1">+</button>
+
+    </div>
+
+    <br>
+
+    <div class="item">
+
+        <h4>Brownie com Ninho — R$ 12,00</h4>
+
+        <p>Brownie tradicional coberto com creme de leite Ninho cremoso.</p>
+
+    </div>
+
+    <div class="quantidade">
+
+        <button class="menos" id="menos2">-</button>
+
+        <input type="number" id="qtd2" value="1" min="1">
+
+        <button class="mais" id="mais2">+</button>
+
+    </div>
+
+    <br>
+
+    <div class="item">
+
+        <h4>Brownie com Brigadeiro — R$ 12,00</h4>
+
+        <p>Brownie recheado e coberto com Nutella, perfeito para quem ama chocolate com avelã.</p>
+
+    </div>
+
+    <div class="quantidade">
+
+        <button class="menos" id="menos3">-</button>
+
+        <input type="number" id="qtd3" value="1" min="1">
+
+        <button class="mais" id="mais3">+</button>
+
+    </div>
+
+    <hr>
+
+    <br>
+
+    <div class="item">
+
+        <h4>Brownie de Doce de Leite — R$ 13,00</h4>
+
+        <p>Combinação irresistível de brownie com doce de leite cremoso.</p>
+
+    </div>
+
+    <div class="quantidade">
+
+        <button class="menos" id="menos4">-</button>
+
+        <input type="number" id="qtd4" value="1" min="1">
+
+        <button class="mais" id="mais4">+</button>
+
+    </div>
+
+    <br>
+
+    <div class="item">
+
+        <h4>Brownie de Oreo — R$ 13,00</h4>
+
+        <p>Brownie com creme branco e pedaços de biscoito Oreo.</p>
+
+    </div>
+
+    <div class="quantidade">
+
+        <button class="menos" id="menos5">-</button>
+
+        <input type="number" id="qtd5" value="1" min="1">
+
+        <button class="mais" id="mais5">+</button>
+
+    </div>
+
+    <script>
+        // Brownie Clássico
+        const menos1 = document.getElementById("menos1");
+        const mais1 = document.getElementById("mais1");
+        const input1 = document.getElementById("qtd1");
+
+        mais1.addEventListener("click", () => {
+            input1.value = parseInt(input1.value) + 1;
         });
-    
-        menos.addEventListener("click", () => {
-            if (parseInt(input.value) > 1) {
-                input.value = parseInt(input.value) - 1;
+
+        menos1.addEventListener("click", () => {
+            if (parseInt(input1.value) > 1) {
+                input1.value = parseInt(input1.value) - 1;
             }
         });
-        </script>
+
+        // Brownie com Ninho
+        const menos2 = document.getElementById("menos2");
+        const mais2 = document.getElementById("mais2");
+        const input2 = document.getElementById("qtd2");
+
+        mais2.addEventListener("click", () => {
+            input2.value = parseInt(input2.value) + 1;
+        });
+
+        menos2.addEventListener("click", () => {
+            if (parseInt(input2.value) > 1) {
+                input2.value = parseInt(input2.value) - 1;
+            }
+        });
+
+        // Brownie com Brigadeiro
+        const menos3 = document.getElementById("menos3");
+        const mais3 = document.getElementById("mais3");
+        const input3 = document.getElementById("qtd3");
+
+        mais3.addEventListener("click", () => {
+            input3.value = parseInt(input3.value) + 1;
+        });
+
+        menos3.addEventListener("click", () => {
+            if (parseInt(input3.value) > 1) {
+                input3.value = parseInt(input3.value) - 1;
+            }
+        });
+
+        // Brownie de Doce de Leite
+        const menos4 = document.getElementById("menos4");
+        const mais4 = document.getElementById("mais4");
+        const input4 = document.getElementById("qtd4");
+
+        mais4.addEventListener("click", () => {
+            input4.value = parseInt(input4.value) + 1;
+        });
+
+        menos4.addEventListener("click", () => {
+            if (parseInt(input4.value) > 1) {
+                input4.value = parseInt(input4.value) - 1;
+            }
+        });
+
+        // Brownie de Oreo
+        const menos5 = document.getElementById("menos5");
+        const mais5 = document.getElementById("mais5");
+        const input5 = document.getElementById("qtd5");
+
+        mais5.addEventListener("click", () => {
+            input5.value = parseInt(input5.value) + 1;
+        });
+
+        menos5.addEventListener("click", () => {
+            if (parseInt(input5.value) > 1) {
+                input5.value = parseInt(input5.value) - 1;
+            }
+        });
+    </script>
+
     </main>
 
       <!-- RODAPÉ -->
