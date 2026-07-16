@@ -47,7 +47,7 @@ body {
     height: calc(100vh - 140px);
 }
 
-.logo-container img {
+.logo-container .logo {
     width: 450px;
     max-width: 90%;
 }
@@ -73,7 +73,7 @@ body {
     padding: 40px;
     border-radius: 15px;
     width: 70%;
-    max: width 750px;
+    max-width: 750px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
@@ -181,7 +181,7 @@ body {
 /* PÁGINA CARDÁPIO */
 /* ========================= */
 
-.cardapio-container {
+.cardapio-container  {
     max-width: 850px;
     margin: 40px auto 60px;
     background: #fff;
@@ -190,11 +190,13 @@ body {
     overflow: hidden;
 }
 
- img {
+ .item img {
     width: 180px;
     height: 130px;
     object-fit: cover;
+    border-radius: 8px;
 }
+
 .cardapio-header {
     background: #99001a;
     color: white;
