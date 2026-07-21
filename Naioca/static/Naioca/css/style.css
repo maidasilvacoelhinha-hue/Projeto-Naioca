@@ -64,18 +64,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 100px);
-    padding:40px 20px;
+    min-height: calc(100vh - 100px); /* Usa min-height em vez de height */
+    padding: 40px 10px; /* Aumenta o padding vertical para dar respiro */
 }
 
 .sobre-box {
     background: white;
     padding: 40px;
     border-radius: 15px;
-    width: 70%;
+    width: 60%;
     max-width: 750px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px 0; /* Garante espaçamento externo nas laterais do card */
 }
 
 .sobre-box h1 {
@@ -113,7 +114,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 140px);
+    /* Troque o height fixo por min-height para dar flexibilidade */
+    min-height: calc(100vh - 180px); 
+    padding: 20px 0; /* Cria um respiro interno para a caixa não colar nas faixas */
+    box-sizing: border-box;
 }
 
 .login-box {
