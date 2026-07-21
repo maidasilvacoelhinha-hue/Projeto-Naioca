@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - Naioca</title>
+
+    <link rel="stylesheet" href="{% static 'Naioca/css/style.css' %}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="pagamento">
+
+    <div class="topo">
+        <h2>Naioca</h2>
+        <span>X</span>
+    </div>
+
+    <div class="conteudo">
+
+        <h1>Forma de Pagamento</h1>
+
+        <div class="formas">
+
+            <button>Cartão</button>
+
+            <button>Dinheiro</button>
+
+            <button>Pix</button>
+
+        </div>
+
+        <hr>
+
+        <h1>Endereço</h1>
+
+        <input type="text" placeholder="CEP: Ex: 00000-000">
+
+        <input type="text" placeholder="Rua: Ex: Rua das Flores 170">
+
+        <input type="text" placeholder="Bairro: Ex: Felipe Camarão">
+
+        <hr>
+
+        <h1>Finalização de Pagamento</h1>
+
+        <div class="valor">
+            <p>Subtotal: R$ 00,00</p>
+        </div>
+
+        <div class="valor">
+            <p>Total: R$ 00,00</p>
+        </div>
+
+        <div class="seguranca">
+
+            <h3>SEGURANÇA NO PAGAMENTO</h3>
+
+            <p>
+                Pra evitar qualquer problema, segue o básico:<br>
+
+                • Faça o pagamento só pelos canais oficiais informados.<br>
+
+                • Confira o nome do beneficiário antes de finalizar.<br>
+
+                • Não enviamos dados bancários por mensagens aleatórias.<br>
+
+                • Não compartilhe seus comprovantes com terceiros.<br>
+
+                Se surgir qualquer dúvida, fale conosco pelos canais oficiais.
+            </p>
+
+        </div>
+
+        <div class="botoes">
+
+            <button class="continuar">
+                Continuar Compra
+            </button>
+
+            <button class="finalizar">
+                Finalizar Compra
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="painel">
+
+    <div class="card">
+
+        <h2>Selecione a forma</h2>
+
+        <div class="linha">
+
+            <button>Crédito</button>
+
+            <button>Débito</button>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Necessita de troco?</h2>
+
+        <input type="text" placeholder="Valor Ex: 00,00">
+
+        <div class="linha">
+
+            <button>Não</button>
+
+            <button>Sim</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<body>
+
+<div class="pagina-pagamento">
+
+    <!-- Todo o conteúdo da página aqui -->
+
+</div>
+
+</body>
+
+</html>

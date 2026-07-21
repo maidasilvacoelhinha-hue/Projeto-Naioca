@@ -26,3 +26,6 @@ def menu(request):
         "itens": itens
     }
     return render(request, "Naioca/cardapio.html", context)
+
+def pagamento(request):
+    return render(request, "Naioca/pagamento.html")

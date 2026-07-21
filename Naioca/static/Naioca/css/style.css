@@ -436,3 +436,543 @@ body {
     color:#8b001c;
     margin-top:10px;
 }
+/* ============================
+PÁGINA DE PAGAMENTO
+============================ */
+
+.pagina-pagamento{
+    background:#f5e7e8;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    padding:30px;
+    font-family:'Lilita One', cursive;
+}
+
+/* Reset somente da página */
+
+.pagina-pagamento *,
+.pagina-pagamento *::before,
+.pagina-pagamento *::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Caixa principal */
+
+.pagina-pagamento .pagamento{
+    width:520px;
+    background:#fff;
+    border:1px solid #ccc;
+}
+
+/* Topo */
+
+.pagina-pagamento .topo{
+    background:#a50023;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 18px;
+}
+
+.pagina-pagamento .topo h2{
+    font-size:30px;
+}
+
+.pagina-pagamento .topo span{
+    font-size:32px;
+    cursor:pointer;
+}
+
+/* Conteúdo */
+
+.pagina-pagamento .conteudo{
+    padding:25px;
+}
+
+.pagina-pagamento h1{
+    font-size:34px;
+    margin-bottom:18px;
+    color:#111;
+}
+
+/* Formas de pagamento */
+
+.pagina-pagamento .formas{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:25px;
+}
+
+.pagina-pagamento .formas button{
+    width:120px;
+    height:40px;
+    border:none;
+    border-radius:20px;
+    background:#a50023;
+    color:#fff;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* Inputs */
+
+.pagina-pagamento input{
+    width:100%;
+    height:42px;
+    border:none;
+    border-radius:20px;
+    background:#a50023;
+    color:#fff;
+    padding-left:18px;
+    font-size:20px;
+    margin-bottom:12px;
+}
+
+.pagina-pagamento input::placeholder{
+    color:#f6c4c4;
+}
+
+/* Valores */
+
+.pagina-pagamento .valor{
+    width:270px;
+    background:#a50023;
+    color:#fff;
+    border-radius:20px;
+    padding:8px 15px;
+    margin-bottom:10px;
+}
+
+/* Segurança */
+
+.pagina-pagamento .seguranca{
+    text-align:center;
+    color:#d0d0d0;
+    margin:35px 0;
+}
+
+.pagina-pagamento .seguranca h3{
+    font-size:18px;
+}
+
+.pagina-pagamento .seguranca p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    line-height:20px;
+}
+
+/* Botões */
+
+.pagina-pagamento .botoes{
+    display:flex;
+    justify-content:space-between;
+}
+
+.pagina-pagamento .botoes button{
+    width:210px;
+    height:46px;
+    border:none;
+    border-radius:22px;
+    background:#a50023;
+    color:#fff;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* Painel lateral */
+
+.pagina-pagamento .painel{
+    width:230px;
+}
+
+.pagina-pagamento .card{
+    background:#fff;
+    border-radius:15px;
+    padding:15px;
+    margin-bottom:25px;
+}
+
+.pagina-pagamento .card h2{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.pagina-pagamento .linha{
+    display:flex;
+    justify-content:space-between;
+}
+
+.pagina-pagamento .linha button{
+    width:80px;
+    height:36px;
+    border:none;
+    border-radius:18px;
+    background:#a50023;
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.pagina-pagamento hr{
+    margin:20px 0;
+    border:1px solid #d2d2d2;
+}
+/* ==========================================
+        PÁGINA PAGAMENTO
+========================================== */
+
+.pagina-pagamento{
+
+    background:#f6e9ea;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:60px;
+
+    padding:40px;
+
+    font-family:'Lilita One', cursive;
+
+}
+
+/* Reset somente da página */
+
+.pagina-pagamento *,
+.pagina-pagamento *::before,
+.pagina-pagamento *::after{
+
+    box-sizing:border-box;
+
+}
+
+/* Caixa principal */
+
+.pagina-pagamento .pagamento{
+
+    width:550px;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+/* Topo */
+
+.pagina-pagamento .topo{
+
+    background:#980020;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 25px;
+
+}
+
+.pagina-pagamento .topo h2{
+
+    font-size:34px;
+
+}
+
+.pagina-pagamento .topo span{
+
+    font-size:32px;
+
+    cursor:pointer;
+
+}
+
+/* Conteúdo */
+
+.pagina-pagamento .conteudo{
+
+    padding:30px;
+
+}
+
+.pagina-pagamento h1{
+
+    font-size:32px;
+
+    margin-bottom:18px;
+
+}
+
+/* Botões */
+
+.pagina-pagamento .formas{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:25px;
+
+}
+
+.pagina-pagamento .formas button{
+
+    width:130px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#980020;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pagina-pagamento .formas button:hover{
+
+    background:#700018;
+
+}
+
+/* Inputs */
+
+.pagina-pagamento input{
+
+    width:100%;
+
+    height:45px;
+
+    border:none;
+
+    background:#980020;
+
+    color:#fff;
+
+    border-radius:25px;
+
+    padding:0 18px;
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+.pagina-pagamento input::placeholder{
+
+    color:#ffd4d4;
+
+}
+
+/* Valores */
+
+.pagina-pagamento .valor{
+
+    width:250px;
+
+    background:#980020;
+
+    color:#fff;
+
+    padding:12px 18px;
+
+    border-radius:25px;
+
+    margin-bottom:12px;
+
+}
+
+/* Segurança */
+
+.pagina-pagamento .seguranca{
+
+    text-align:center;
+
+    margin:35px 0;
+
+    color:#a1a1a1;
+
+}
+
+.pagina-pagamento .seguranca h3{
+
+    margin-bottom:10px;
+
+}
+
+.pagina-pagamento .seguranca p{
+
+    font-family:Arial;
+
+    font-size:13px;
+
+    line-height:22px;
+
+}
+
+/* Botões finais */
+
+.pagina-pagamento .botoes{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:30px;
+
+}
+
+.pagina-pagamento .botoes button{
+
+    width:220px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#980020;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pagina-pagamento .botoes button:hover{
+
+    background:#700018;
+
+}
+
+/* Painel lateral */
+
+.pagina-pagamento .painel{
+
+    width:240px;
+
+}
+
+.pagina-pagamento .card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.12);
+
+}
+
+.pagina-pagamento .card h2{
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.pagina-pagamento .linha{
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+.pagina-pagamento .linha button{
+
+    width:85px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:#980020;
+
+    color:#fff;
+
+    cursor:pointer;
+
+}
+
+.pagina-pagamento hr{
+
+    margin:25px 0;
+
+}
+/*==================================
+BOTÃO IR PARA PAGAMENTO
+===================================*/
+
+.acoes-cardapio{
+
+    display:flex;
+    justify-content:center;
+    margin:40px 0;
+
+}
+
+.btn-ir-pagamento{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:300px;
+    height:55px;
+
+    background:#980020;
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-family:'Lilita One', cursive;
+    font-size:28px;
+
+    transition:.3s;
+
+}
+
+.btn-ir-pagamento:hover{
+
+    background:#760018;
+    transform:scale(1.05);
+
+}
