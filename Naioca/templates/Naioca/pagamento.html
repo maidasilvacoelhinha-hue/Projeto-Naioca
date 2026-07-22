@@ -27,22 +27,24 @@
     <!-- FORMAS DE PAGAMENTO -->
     <div class="botoes-pagamento">
 
-        <button type="button" class="btn-pagamento" data-pagamento="CARTAO">
-            Cartão
-            <input type="hidden" name="forma_pagamento" id="forma_pagamento">
-        </button>
+    <button type="button" class="btn-pagamento" data-pagamento="CARTAO">
+        Cartão
+    </button>
 
-        <button type="button" class="btn-pagamento" data-pagamento="DINHEIRO">
-            Dinheiro
-            <input type="hidden" name="forma_pagamento" id="forma_pagamento">
-        </button>
+    <button type="button" class="btn-pagamento" data-pagamento="DINHEIRO">
+        Dinheiro
+    </button>
 
-        <button type="button" class="btn-pagamento" data-pagamento="PIX">
-            Pix
-            <input type="hidden" name="forma_pagamento" id="forma_pagamento">
-        </button>
+    <button type="button" class="btn-pagamento" data-pagamento="PIX">
+        Pix
+    </button>
 
-    </div>
+</div>
+
+<input
+    type="hidden"
+    name="forma_pagamento"
+    id="forma_pagamento">
 
     <hr>
 
@@ -95,7 +97,7 @@
             Continuar Compra
         </a>
 
-        <button type="button" class="btn-finalizar">
+        <button type="submit" class="btn-finalizar">
         Finalizar Compra
         </button>
 
@@ -180,11 +182,7 @@ botoes.forEach(botao=>{
 
 });
 
-document.querySelector(".btn-finalizar").onclick=function(){
 
-    document.querySelector("form").submit();
-
-}
 
 
 </script>

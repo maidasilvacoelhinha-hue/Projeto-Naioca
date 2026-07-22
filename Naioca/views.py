@@ -96,7 +96,11 @@ def pagamento(request):
         cliente = None
 
         if cliente_id:
-            cliente = Cliente.objects.get(id=cliente_id)
+            try:
+                cliente = Cliente.objects.get(id=cliente_id)
+            except Cliente.DoesNotExist:
+                cliente = None
+
 
         pedido = Pedido.objects.create(
             cliente=cliente,
@@ -107,6 +111,7 @@ def pagamento(request):
             total=total
         )
 
+
         return render(
             request,
             "Naioca/pedido_recebido.html",
@@ -116,6 +121,7 @@ def pagamento(request):
                 "pedido": pedido
             }
         )
+
 
     return render(
         request,

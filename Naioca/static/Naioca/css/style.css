@@ -808,3 +808,87 @@ body {
 .pedido-recebido p {
     color: white !important;
 }
+/* Botão Ir para Pagamento */
+
+.ir-pagamento{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:40px 0;
+}
+
+.btn-pagamento-final{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    width:280px;
+    height:55px;
+
+    background:#99001a;
+    color:#fff;
+
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    font-family:'Lilita One', cursive;
+
+    border-radius:12px;
+    border:none;
+
+    transition:.3s;
+    cursor:pointer;
+}
+
+/* BOTÃO IR PARA PAGAMENTO */
+
+.ir-pagamento {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.ir-pagamento .btn-pagamento-final {
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+
+    width: 280px;
+    height: 55px;
+
+    background: #99001a !important;
+    color: white !important;
+
+    text-decoration: none !important;
+
+    border-radius: 12px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.ir-pagamento .btn-pagamento-final:hover {
+    background: #6d0015 !important;
+}
+body {
+    border: 10px solid red !important;
+}
+.ir-pagamento {
+    background: yellow !important;
+    padding: 30px !important;
+    text-align: center !important;
+}
+
+#irPagamento {
+    background: red !important;
+    color: white !important;
+    display: inline-block !important;
+    padding: 20px !important;
+    width: 300px !important;
+    height: 70px !important;
+    font-size: 25px !important;
+    text-decoration: none !important;
+}

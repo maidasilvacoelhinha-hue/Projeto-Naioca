@@ -58,7 +58,12 @@ class Pedido(models.Model):
         max_digits=8,
         decimal_places=2
     )
-    
+
+    status = models.CharField(
+    max_length=20,
+    choices=STATUS,
+    default="RECEBIDO"
+    )
     
 
     criado_em = models.DateTimeField(auto_now_add=True)
