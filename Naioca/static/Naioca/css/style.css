@@ -976,3 +976,181 @@ BOTÃO IR PARA PAGAMENTO
     transform:scale(1.05);
 
 }
+/* ==========================
+   BOTÃO FECHAR (X)
+========================== */
+
+.btn-fechar-pagamento{
+    width:40px;
+    height:40px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:transparent;
+    color:#fff;
+
+    text-decoration:none;
+    font-size:30px;
+    font-weight:bold;
+
+    border-radius:50%;
+    transition:.3s;
+}
+
+.btn-fechar-pagamento:hover{
+    background:rgba(255,255,255,.18);
+    transform:rotate(90deg);
+}
+
+
+/* ==========================
+   BOTÕES DE PAGAMENTO
+========================== */
+
+.botoes-pagamento{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+.btn-pagamento{
+    background:#ffffff;
+    color:#99001a;
+
+    border:2px solid #99001a;
+    border-radius:8px;
+
+    padding:12px 22px;
+
+    cursor:pointer;
+
+    font-size:16px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-pagamento:hover{
+    background:#99001a;
+    color:#fff;
+}
+
+
+/* ==========================
+   BOTÕES FINAIS
+========================== */
+
+.acoes-pagamento{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.btn-continuar{
+    background:#ffffff;
+    color:#99001a;
+
+    border:2px solid #99001a;
+    border-radius:8px;
+
+    padding:14px 26px;
+
+    text-decoration:none;
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.btn-continuar:hover{
+    background:#99001a;
+    color:#fff;
+}
+
+.btn-finalizar{
+    background:#ff6b00;
+    color:#fff;
+
+    border:none;
+    border-radius:8px;
+
+    padding:14px 26px;
+
+    cursor:pointer;
+
+    font-size:16px;
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.btn-finalizar:hover{
+    background:#e65f00;
+}
+
+
+/* ==========================
+   BOTÕES CRÉDITO/DÉBITO
+========================== */
+
+.forma-cartao{
+    display:flex;
+    gap:12px;
+    margin:15px 0;
+}
+
+.btn-forma-cartao{
+    background:#fff;
+    color:#99001a;
+
+    border:2px solid #99001a;
+    border-radius:8px;
+
+    padding:10px 20px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-forma-cartao:hover{
+    background:#99001a;
+    color:#fff;
+}
+
+
+/* ==========================
+   BOTÕES SIM/NÃO
+========================== */
+
+.troco-opcoes{
+    display:flex;
+    gap:12px;
+    margin-top:12px;
+}
+
+.btn-troco{
+    background:#fff;
+    color:#99001a;
+
+    border:2px solid #99001a;
+    border-radius:8px;
+
+    padding:10px 22px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.btn-troco:hover{
+    background:#99001a;
+    color:#fff;
+}
