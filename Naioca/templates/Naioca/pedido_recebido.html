@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Pedido Recebido - Naioca</title>
+
+<link rel="stylesheet" href="{% static 'Naioca/css/style.css' %}?v=2">
+
+</head>
+
+
+<body>
+
+
+<div class="pedido-recebido">
+
+
+    <h1>Pedido recebido! 🍫</h1>
+    <p>
+    Número do pedido:
+    #{{ pedido.id }}
+    </p>
+
+    <p>
+        Obrigado pela sua compra.
+    </p>
+
+
+    <p>
+        Seu pedido foi enviado para a cozinha.
+    </p>
+
+
+    <hr>
+
+
+    <h2>Resumo</h2>
+
+
+    <p>
+        Forma de pagamento:
+        {{ forma }}
+    </p>
+
+
+    <p>
+        Total:
+        R$ {{ total }}
+    </p>
+
+
+
+    <a href="{% url 'Naioca:telainicial' %}">
+        Voltar para início
+    </a>
+
+
+</div>
+
+
+</body>
+
+</html>

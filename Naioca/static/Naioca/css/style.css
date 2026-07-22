@@ -436,600 +436,69 @@ body {
     color:#8b001c;
     margin-top:10px;
 }
-/* ============================
-PÁGINA DE PAGAMENTO
-============================ */
+/* ===========================
+        PAGAMENTO
+=========================== */
 
-.pagina-pagamento{
-    background:#f5e7e8;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    gap:60px;
-    padding:30px;
-    font-family:'Lilita One', cursive;
-}
-
-/* Reset somente da página */
-
-.pagina-pagamento *,
-.pagina-pagamento *::before,
-.pagina-pagamento *::after{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-/* Caixa principal */
-
-.pagina-pagamento .pagamento{
-    width:520px;
-    background:#fff;
-    border:1px solid #ccc;
-}
-
-/* Topo */
-
-.pagina-pagamento .topo{
-    background:#a50023;
-    color:#fff;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 18px;
-}
-
-.pagina-pagamento .topo h2{
-    font-size:30px;
-}
-
-.pagina-pagamento .topo span{
-    font-size:32px;
-    cursor:pointer;
-}
-
-/* Conteúdo */
-
-.pagina-pagamento .conteudo{
-    padding:25px;
-}
-
-.pagina-pagamento h1{
-    font-size:34px;
-    margin-bottom:18px;
-    color:#111;
-}
-
-/* Formas de pagamento */
-
-.pagina-pagamento .formas{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:25px;
-}
-
-.pagina-pagamento .formas button{
-    width:120px;
-    height:40px;
-    border:none;
-    border-radius:20px;
-    background:#a50023;
-    color:#fff;
-    font-size:24px;
-    cursor:pointer;
-}
-
-/* Inputs */
-
-.pagina-pagamento input{
-    width:100%;
-    height:42px;
-    border:none;
-    border-radius:20px;
-    background:#a50023;
-    color:#fff;
-    padding-left:18px;
-    font-size:20px;
-    margin-bottom:12px;
-}
-
-.pagina-pagamento input::placeholder{
-    color:#f6c4c4;
-}
-
-/* Valores */
-
-.pagina-pagamento .valor{
-    width:270px;
-    background:#a50023;
-    color:#fff;
-    border-radius:20px;
-    padding:8px 15px;
-    margin-bottom:10px;
-}
-
-/* Segurança */
-
-.pagina-pagamento .seguranca{
-    text-align:center;
-    color:#d0d0d0;
-    margin:35px 0;
-}
-
-.pagina-pagamento .seguranca h3{
-    font-size:18px;
-}
-
-.pagina-pagamento .seguranca p{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:13px;
-    line-height:20px;
-}
-
-/* Botões */
-
-.pagina-pagamento .botoes{
-    display:flex;
-    justify-content:space-between;
-}
-
-.pagina-pagamento .botoes button{
-    width:210px;
-    height:46px;
-    border:none;
-    border-radius:22px;
-    background:#a50023;
-    color:#fff;
-    font-size:24px;
-    cursor:pointer;
-}
-
-/* Painel lateral */
-
-.pagina-pagamento .painel{
-    width:230px;
-}
-
-.pagina-pagamento .card{
+.pagamento{
+    width:900px;
+    max-width:95%;
+    margin:40px auto;
     background:#fff;
     border-radius:15px;
-    padding:15px;
-    margin-bottom:25px;
-}
-
-.pagina-pagamento .card h2{
-    font-size:22px;
-    margin-bottom:15px;
-}
-
-.pagina-pagamento .linha{
-    display:flex;
-    justify-content:space-between;
-}
-
-.pagina-pagamento .linha button{
-    width:80px;
-    height:36px;
-    border:none;
-    border-radius:18px;
-    background:#a50023;
-    color:#fff;
-    font-size:20px;
-    cursor:pointer;
-}
-
-.pagina-pagamento hr{
-    margin:20px 0;
-    border:1px solid #d2d2d2;
-}
-/* ==========================================
-        PÁGINA PAGAMENTO
-========================================== */
-
-.pagina-pagamento{
-
-    background:#f6e9ea;
-
-    min-height:100vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:60px;
-
-    padding:40px;
-
-    font-family:'Lilita One', cursive;
-
-}
-
-/* Reset somente da página */
-
-.pagina-pagamento *,
-.pagina-pagamento *::before,
-.pagina-pagamento *::after{
-
-    box-sizing:border-box;
-
-}
-
-/* Caixa principal */
-
-.pagina-pagamento .pagamento{
-
-    width:550px;
-
-    background:#fff;
-
-    border-radius:12px;
-
     overflow:hidden;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-
+    box-shadow:0 5px 18px rgba(0,0,0,.15);
 }
 
-/* Topo */
-
-.pagina-pagamento .topo{
-
-    background:#980020;
-
+.pagamento .topo{
+    background:#99001a;
     color:#fff;
-
+    padding:20px 30px;
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    padding:15px 25px;
-
 }
 
-.pagina-pagamento .topo h2{
-
+.pagamento .topo h2{
     font-size:34px;
-
-}
-
-.pagina-pagamento .topo span{
-
-    font-size:32px;
-
-    cursor:pointer;
-
-}
-
-/* Conteúdo */
-
-.pagina-pagamento .conteudo{
-
-    padding:30px;
-
-}
-
-.pagina-pagamento h1{
-
-    font-size:32px;
-
-    margin-bottom:18px;
-
-}
-
-/* Botões */
-
-.pagina-pagamento .formas{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    margin-bottom:25px;
-
-}
-
-.pagina-pagamento .formas button{
-
-    width:130px;
-
-    height:42px;
-
-    border:none;
-
-    border-radius:25px;
-
-    background:#980020;
-
-    color:white;
-
-    font-size:22px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-.pagina-pagamento .formas button:hover{
-
-    background:#700018;
-
-}
-
-/* Inputs */
-
-.pagina-pagamento input{
-
-    width:100%;
-
-    height:45px;
-
-    border:none;
-
-    background:#980020;
-
+    margin:0;
     color:#fff;
-
-    border-radius:25px;
-
-    padding:0 18px;
-
-    font-size:18px;
-
-    margin-bottom:15px;
-
 }
-
-.pagina-pagamento input::placeholder{
-
-    color:#ffd4d4;
-
-}
-
-/* Valores */
-
-.pagina-pagamento .valor{
-
-    width:250px;
-
-    background:#980020;
-
-    color:#fff;
-
-    padding:12px 18px;
-
-    border-radius:25px;
-
-    margin-bottom:12px;
-
-}
-
-/* Segurança */
-
-.pagina-pagamento .seguranca{
-
-    text-align:center;
-
-    margin:35px 0;
-
-    color:#a1a1a1;
-
-}
-
-.pagina-pagamento .seguranca h3{
-
-    margin-bottom:10px;
-
-}
-
-.pagina-pagamento .seguranca p{
-
-    font-family:Arial;
-
-    font-size:13px;
-
-    line-height:22px;
-
-}
-
-/* Botões finais */
-
-.pagina-pagamento .botoes{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    margin-top:30px;
-
-}
-
-.pagina-pagamento .botoes button{
-
-    width:220px;
-
-    height:50px;
-
-    border:none;
-
-    border-radius:30px;
-
-    background:#980020;
-
-    color:white;
-
-    font-size:22px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-.pagina-pagamento .botoes button:hover{
-
-    background:#700018;
-
-}
-
-/* Painel lateral */
-
-.pagina-pagamento .painel{
-
-    width:240px;
-
-}
-
-.pagina-pagamento .card{
-
-    background:white;
-
-    border-radius:15px;
-
-    padding:20px;
-
-    margin-bottom:25px;
-
-    box-shadow:0 5px 12px rgba(0,0,0,.12);
-
-}
-
-.pagina-pagamento .card h2{
-
-    margin-bottom:15px;
-
-    font-size:22px;
-
-}
-
-.pagina-pagamento .linha{
-
-    display:flex;
-
-    justify-content:space-between;
-
-}
-
-.pagina-pagamento .linha button{
-
-    width:85px;
-
-    height:38px;
-
-    border:none;
-
-    border-radius:20px;
-
-    background:#980020;
-
-    color:#fff;
-
-    cursor:pointer;
-
-}
-
-.pagina-pagamento hr{
-
-    margin:25px 0;
-
-}
-/*==================================
-BOTÃO IR PARA PAGAMENTO
-===================================*/
-
-.acoes-cardapio{
-
-    display:flex;
-    justify-content:center;
-    margin:40px 0;
-
-}
-
-.btn-ir-pagamento{
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    width:300px;
-    height:55px;
-
-    background:#980020;
-    color:#fff;
-
-    text-decoration:none;
-
-    border-radius:30px;
-
-    font-family:'Lilita One', cursive;
-    font-size:28px;
-
-    transition:.3s;
-
-}
-
-.btn-ir-pagamento:hover{
-
-    background:#760018;
-    transform:scale(1.05);
-
-}
-/* ==========================
-   BOTÃO FECHAR (X)
-========================== */
 
 .btn-fechar-pagamento{
-    width:40px;
-    height:40px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    background:transparent;
     color:#fff;
-
+    font-size:38px;
     text-decoration:none;
+}
+
+.pagamento h1{
     font-size:30px;
-    font-weight:bold;
-
-    border-radius:50%;
-    transition:.3s;
+    color:#99001a;
+    margin:30px;
 }
 
-.btn-fechar-pagamento:hover{
-    background:rgba(255,255,255,.18);
-    transform:rotate(90deg);
+.pagamento hr{
+    border:none;
+    border-top:1px solid #ddd;
+    margin:30px;
 }
-
-
-/* ==========================
-   BOTÕES DE PAGAMENTO
-========================== */
 
 .botoes-pagamento{
     display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-    margin:20px 0;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
 }
 
 .btn-pagamento{
-    background:#ffffff;
-    color:#99001a;
-
+    width:180px;
+    padding:15px;
     border:2px solid #99001a;
-    border-radius:8px;
-
-    padding:12px 22px;
-
+    background:#fff;
+    color:#99001a;
+    border-radius:10px;
+    font-size:18px;
     cursor:pointer;
-
-    font-size:16px;
-    font-weight:600;
-
     transition:.3s;
 }
 
@@ -1038,31 +507,57 @@ BOTÃO IR PARA PAGAMENTO
     color:#fff;
 }
 
+.pagamento input{
+    width:calc(100% - 60px);
+    margin:10px 30px;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
 
-/* ==========================
-   BOTÕES FINAIS
-========================== */
+.valor{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 30px;
+    font-size:22px;
+}
+
+.seguranca{
+    background:#fff5f5;
+    margin:30px;
+    padding:20px;
+    border-left:5px solid #99001a;
+    border-radius:8px;
+}
+
+.seguranca h3{
+    color:#99001a;
+    margin-bottom:10px;
+}
 
 .acoes-pagamento{
     display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-top:30px;
+    justify-content:space-between;
+    padding:30px;
+}
+
+.btn-continuar,
+.btn-finalizar{
+    width:260px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
 }
 
 .btn-continuar{
-    background:#ffffff;
-    color:#99001a;
-
     border:2px solid #99001a;
-    border-radius:8px;
-
-    padding:14px 26px;
-
-    text-decoration:none;
-    font-weight:bold;
-
-    transition:.3s;
+    color:#99001a;
+    background:#fff;
 }
 
 .btn-continuar:hover{
@@ -1071,86 +566,245 @@ BOTÃO IR PARA PAGAMENTO
 }
 
 .btn-finalizar{
-    background:#ff6b00;
-    color:#fff;
-
     border:none;
-    border-radius:8px;
-
-    padding:14px 26px;
-
-    cursor:pointer;
-
-    font-size:16px;
-    font-weight:bold;
-
-    transition:.3s;
+    background:#ff7a00;
+    color:#fff;
 }
 
 .btn-finalizar:hover{
-    background:#e65f00;
+    background:#d96500;
 }
 
-
-/* ==========================
-   BOTÕES CRÉDITO/DÉBITO
-========================== */
-
-.forma-cartao{
-    display:flex;
-    gap:12px;
-    margin:15px 0;
+.painel{
+    width:900px;
+    max-width:95%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
 }
 
-.btn-forma-cartao{
+.card{
     background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 3px 12px rgba(0,0,0,.1);
+}
+
+.card h2{
+    margin-bottom:20px;
     color:#99001a;
+}
 
-    border:2px solid #99001a;
+.card input{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
     border-radius:8px;
+    margin-bottom:20px;
+}
 
-    padding:10px 20px;
+.linha{
+    display:flex;
+    gap:15px;
+}
 
+.linha button{
+    flex:1;
+    padding:14px;
+    background:#99001a;
+    color:#fff;
+    border:none;
+    border-radius:8px;
     cursor:pointer;
-
-    font-weight:600;
-
     transition:.3s;
 }
 
-.btn-forma-cartao:hover{
-    background:#99001a;
-    color:#fff;
+.linha button:hover{
+    background:#760014;
 }
 
+@media(max-width:800px){
 
+.painel{
+    grid-template-columns:1fr;
+}
+
+.botoes-pagamento{
+    flex-direction:column;
+}
+
+.acoes-pagamento{
+    flex-direction:column;
+    gap:15px;
+}
+
+.btn-continuar,
+.btn-finalizar{
+    width:100%;
+}
+
+}
 /* ==========================
-   BOTÕES SIM/NÃO
+   PEDIDO RECEBIDO - NAIoca
 ========================== */
 
-.troco-opcoes{
-    display:flex;
-    gap:12px;
-    margin-top:12px;
+.pedido-recebido {
+
+    width: 90%;
+    max-width: 550px;
+
+    margin: 70px auto;
+
+    background: #ffffff;
+
+    padding: 45px 40px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(153, 0, 26, 0.15);
+
+    border-top: 8px solid #99001a;
+
+    animation: aparecer 0.5s ease;
 }
 
-.btn-troco{
-    background:#fff;
-    color:#99001a;
 
-    border:2px solid #99001a;
-    border-radius:8px;
+.pedido-recebido h1 {
 
-    padding:10px 22px;
+    color: #99001a;
 
-    cursor:pointer;
+    font-size: 42px;
 
-    font-weight:bold;
+    margin-bottom: 20px;
 
-    transition:.3s;
+    font-family: 'Lilita One', cursive;
+
 }
 
-.btn-troco:hover{
-    background:#99001a;
-    color:#fff;
+
+.pedido-recebido p {
+
+    color: #444;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    margin: 15px 0;
+
+}
+
+
+.pedido-recebido hr {
+
+    border: none;
+
+    height: 2px;
+
+    background: #f0c7c7;
+
+    margin: 30px 0;
+
+}
+
+
+.pedido-recebido h2 {
+
+    color: #99001a;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.pedido-recebido p strong {
+
+    color: #99001a;
+
+}
+
+
+.pedido-recebido a {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 15px 40px;
+
+    background: #99001a;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+}
+
+
+.pedido-recebido a:hover {
+
+    background: #6d0015;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* animação */
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* fundo somente da página */
+
+body {
+
+    background: #fff4e6;
+
+}
+.pedido-recebido {
+    background: #99001a !important;
+    color: white !important;
+    width: 600px !important;
+    padding: 50px !important;
+    margin: 80px auto !important;
+    border-radius: 30px !important;
+}
+
+.pedido-recebido h1,
+.pedido-recebido h2,
+.pedido-recebido p {
+    color: white !important;
 }

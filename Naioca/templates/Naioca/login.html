@@ -28,16 +28,28 @@
             <h1>LOGIN</h1>
 
             <form method="POST">
+             
                 {% csrf_token %}
 
-                <label>Email</label>
-                <input type="email" name="email" placeholder="naioca@gmail.com">
+            <label>Email</label>
 
-                <label>Senha</label>
-                <input type="password" name="senha" placeholder="Insira sua senha">
-                <br>
-                <br>
-                <button type="submit">Entrar</button>
+            <input
+                    type="email"
+                    name="email"
+                    required>
+
+            <label>Senha</label>
+
+            <input
+                    type="password"
+                    name="senha"
+                    required>
+
+            <button>
+
+                    Entrar
+
+                </button>
             </form>
 
        <p class="criar-conta">
@@ -46,8 +58,7 @@
             Aperte aqui para criar conta
         </a>
 
-            <a href="Naioca/criarconta.html">
-        </p>
+            </p>
 
             <a href="{% url 'Naioca:telainicial' %}" class="botao-voltar">
                 Voltar para página inicial

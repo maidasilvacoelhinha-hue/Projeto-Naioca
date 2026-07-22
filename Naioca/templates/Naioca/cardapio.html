@@ -210,7 +210,9 @@
     </script>
 
 <div class="acoes-cardapio">
-    <a href="{% url 'Naioca:pagamento' %}" class="btn-ir-pagamento">
+    <a id="irPagamento"
+       href="{% url 'Naioca:pagamento' %}"
+       class="btn-ir-pagamento">
         Ir para Pagamento
     </a>
 </div>
@@ -222,6 +224,59 @@
 
 
 </div>
+
+<script>
+
+const precos = [8,12,12,13,13];
+
+const botao = document.getElementById("irPagamento");
+
+function atualizar(){
+
+    let total = 0;
+
+    for(let i=1;i<=5;i++){
+
+        total += parseInt(document.getElementById("qtd"+i).value) * precos[i-1];
+
+    }
+
+    botao.href="{% url 'Naioca:pagamento' %}?total="+total;
+
+}
+
+document.querySelectorAll("input[type=number]").forEach(input=>{
+
+    input.addEventListener("change", atualizar);
+
+});
+
+document.querySelectorAll(".mais,.menos").forEach(btn=>{
+
+    btn.addEventListener("click", ()=>{
+
+        setTimeout(atualizar,50);
+
+    });
+
+});
+
+atualizar();
+
+</script>
+{% for produto in produtos %}
+
+<div class="item">
+
+    <h4>{{ produto.nome }} — R$ {{ produto.preco }}</h4>
+
+    <img src="{{ produto.imagem.url }}">
+
+    <p>{{ produto.descricao }}</p>
+
+</div>
+
+{% endfor %}
 
 </body>
 
